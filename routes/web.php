@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', "BerandaController@home");
-Route::get('/about', "BerandaController@about");
-Route::get('/pricing', "BerandaController@pricing");
-Route::get('/contact', "BerandaController@contact");
+Route::get('/', "BerandaController@home")->name("home");
+Route::get('/about', "BerandaController@about")->name("about");
+Route::get('/pricing', "BerandaController@pricing")->name("pricing");
+Route::get('/contact', "BerandaController@contact")->name("contact");
 
 Route::get('/home', 'HomeController@index')->name('home');
