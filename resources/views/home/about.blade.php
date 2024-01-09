@@ -1,15 +1,3 @@
-<!-- @extends('master_inner')
-
-@section('content')
-	<section class="inner_page ">
-		<div class="container">
-			<p>
-			    Example inner page template
-			</p>
-		</div>
-	</section>
-@endsection -->
-
 @extends('master.master_inner')
 @section('content')
     <section id="about" class="about">
