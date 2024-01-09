@@ -12,6 +12,7 @@
           <li><a class="nav-link scrollto active" href="{{ route('home') }}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{ route('about') }}">About</a></li>
           <li><a class="nav-link scrollto" href="{{ route('contact') }}">Contact</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('pricing') }}">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Premium Parfum</a></li>
