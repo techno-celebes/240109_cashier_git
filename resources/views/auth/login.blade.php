@@ -4,15 +4,16 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-5 m-5">
-        <form>
+        <form action="{{ route('login') }}" method="post">
+            @csrf
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="row justify-content-center">
                 <div class="d-grid gap-2 col-6 mx-auto">
