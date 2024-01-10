@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('master.master_inner')
 
 @section('content')
@@ -61,3 +62,17 @@
         </div>
 @endsection
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello pricing</h1>
+    
+</body>
+</html>
+>>>>>>> 6ced5417c75415ea3f61b2e560e6b17ccd70b27b
