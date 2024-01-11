@@ -7,13 +7,13 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{route('dashboard')}}" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{route('add-customer')}}" class="nav-link">Add Customer</a>
+                <a href="#" class="nav-link">Add Customer</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{route('transaction')}}" class="nav-link">Transaction</a>
+                <a href="#" class="nav-link">Transaction</a>
             </li>
         </ul>
 
