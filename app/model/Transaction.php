@@ -1,9 +1,9 @@
 <?php
-namespace App\model;
-use Illuminate\Database\Eloquent\model;
+namespace App\Model;
+use Illuminate\Database\Eloquent\Model;
 
-class Transaction extends model {
-    protected $table = "transaction";
+class Transaction extends Model {
+    protected $table = "transactions";
     protected $primaryKey = "trc_id";
     
     protected $fillable = [

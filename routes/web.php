@@ -25,6 +25,7 @@ Route::get('/transaction', 'TransactionController@transaction')->name("transacti
 
 Route::post('create-customer','CustomerController@create_customer')->name('create-customer');
 Route::post('create-stock','StockController@create_stock')->name('create-stock');
+Route::post('create-transaction','TransactionController@create_stock')->name('create-transaction');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
