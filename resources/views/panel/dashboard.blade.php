@@ -1,4 +1,4 @@
-@extends('panel.master_admin')
+@extends('master.master_admin')
 @section('content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -59,25 +59,4 @@
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Perhatin!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Apakah Anda Yakin Ingin Menghapus Data Ini?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning text-white" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 @endsection
