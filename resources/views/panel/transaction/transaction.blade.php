@@ -63,13 +63,14 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formBeli">
+                <form id="formBeli" method="post" action="{{route('create-transaction')}}">
                     <div class="form-group">
                         <label for="inputNama">Pilih Produk</label>
                         <select class="form-control seleksi" id="inputNama">
-                            <option value="39000" meta-ku="a">Premium Parfum</option>
-                            <option value="25000" meta-ku="a">Arabian Parfum</option>
-                            <option value="27000" meta-ku="a">Haram Parfum</option>
+                            @foreach($stocks as $stock)
+                            <option value="{{$stock->harga_jual}}" meta-ku="a">{{$stock->nama_barang}}</option>
+                            @endforeach
+
                         </select>
                     </div>
                     <div class="form-group">
@@ -85,7 +86,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" id="closeModal" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="tambahConfirm">Buy</button>
+                        <button type="submit" class="btn btn-primary" id="tambahConfirm">Buy</button>
                     </div>
                 </form>
             </div>
