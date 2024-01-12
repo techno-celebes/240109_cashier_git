@@ -10,7 +10,7 @@ class StockController extends Controller
 {
     public function stock(){
         $stock = StockModel::paginate(1);
-        return view('tampilan.stock', ['stock' => $stock]);
+        return view('panel.stock.create', ['stock' => $stock]);
     }
     public function create_stock(Request $request){
         $nama_barang = $request->namabarang;
