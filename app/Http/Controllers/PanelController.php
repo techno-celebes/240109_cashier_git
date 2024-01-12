@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PanelController extends Controller
 {
     public function dashboard(){
-        return view("panel.dashboard");
+        return view("panel.dashboard.dashboard");
     }
 }
