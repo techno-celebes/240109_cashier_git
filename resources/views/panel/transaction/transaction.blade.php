@@ -25,6 +25,26 @@
                             <!-- Data tambahan-->
                         </tbody>
                     </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer ID</th>
+                                <th>Stock ID</th>
+                                <th>Timestamps</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($transaction as $trx)
+                                <tr>
+                                    <td>{{ $trx->trc_id }}</td>
+                                    <td>{{ $trx->customer_id }}</td>
+                                    <td>{{ $trx->stock_id }}</td>
+                                    <td>{{ $trx->created_at }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

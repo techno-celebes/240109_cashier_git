@@ -10,7 +10,7 @@ class TransactionController extends Controller
     public function transaction()
     {
         $transaksi = TransactionModel::all();
-        return view('transaction', ['transaction' => $transaksi]);
+        return view('panel.transaction.transaction', ['transaction' => $transaksi]);
     }
 
 }

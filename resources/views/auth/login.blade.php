@@ -8,7 +8,7 @@
             @csrf
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-           <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
@@ -17,7 +17,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button id="submit" class="btn btn-primary" type="button" >Login</button>   
+                    <button id="submit" class="btn btn-primary" type="submit" >Login</button>   
                 </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">

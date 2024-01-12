@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/', "BerandaController@home")->name("home");
 Route::get('/about', "BerandaController@about")->name("about");
 Route::get('/pricing', "BerandaController@pricing")->name("pricing");
