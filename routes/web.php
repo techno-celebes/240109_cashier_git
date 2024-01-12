@@ -20,6 +20,9 @@ Route::get('/about', "BerandaController@about")->name("about");
 Route::get('/pricing', "BerandaController@pricing")->name("pricing");
 Route::get('/contact', "BerandaController@contact")->name("contact");
 
+Route::post('create-customer','CustomerController@create_customer')->name('create-customer');
+Route::post('create-stock','StockController@create_stock')->name('create-stock');
+Route::post('create-transaction','TransactionController@create_stock')->name('create-transaction');
 
 Route::prefix('panel')->group(function(){
     Route::get('/', 'PanelController@dashboard')->name("dashboard");
